@@ -19,4 +19,5 @@ import mygis.views
 
 urlpatterns = [
     url(r'^$', mygis.views.home, name='home'),
+    url(r'^articles/(?P<article_id>[0-9]+)/$', mygis.views.show_articles, name='article'),
 ]
