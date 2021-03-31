@@ -17,9 +17,22 @@ Including another URLconf
 from django.conf.urls import url
 import mygis.views
 
+
+
+def rstatic(STATIC_URL, document_root) -> object:
+    pass
+
+
+def static(MEDIA_URL, document_root) -> object:
+    pass
+
+
 urlpatterns = [
     url(r'^$', mygis.views.home, name='home'),
     url(r'^map/$', mygis.views.map_my, name='map'),
     url(r'^about/$', mygis.views.about, name='about'),
     url(r'^articles/(?P<article_id>[0-9]+)/$', mygis.views.show_articles, name='article'),
+
+
 ]
+
