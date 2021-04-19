@@ -6,6 +6,12 @@
 
 {% block content %}
     <h2 style="color:lightskyblue">{{ article.title }}</h2>
-
     <p>{{ article.text |safe}}</p>
 {% endblock %}
+
+
+<form action="https://www.google.com/search" method="get">
+    <input type="text" name="query" size="20" maxlength="25" value="Введіть" >
+    <input type="submit" name="query" value="Пошук">
+</form>
+
